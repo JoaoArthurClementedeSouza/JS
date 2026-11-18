@@ -1,31 +1,43 @@
 body {
-  font-family: Arial, sans-serif;
-  max-width: 480px;
-  margin: 24px auto;
-  padding: 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 520px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 48px 20px;
+  box-sizing: border-box;
   text-align: center;
-  background: #1d1f24;
-  color: #e8e8e8;
-  transition: background 0.4s;
+  background: #101828;
+  color: #f1f5f9;
+  transition: background 0.5s, color 0.5s;
 }
 
 /* quando a luz acende, o body ganha a classe "acesa" */
 body.acesa {
-  background: #fff7d1;
-  color: #2a2200;
+  background: #fff9e6;
+  color: #7c2d12;
 }
 
 .lampada {
-  font-size: 80px;
-  margin: 16px 0;
+  font-size: 96px;
+  margin: 24px 0;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.25));
 }
 
 button {
-  padding: 10px 24px;
-  border: none;
-  border-radius: 8px;
-  background: #f7df1e;
-  color: #1d1f24;
-  font-size: 16px;
+  padding: 12px 28px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #facc15;
+  color: #422006;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 6px 16px rgba(250, 204, 21, 0.25);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  border-color: #ffffff;
 }
